@@ -1,10 +1,8 @@
-#Importamos los modulos ajenos
-
-#from datos_palabras.py import seleccionar_palabra_secreta
-#from validacion.py import verificar_victoria
-#from evaluacion.py import evaluar_intento
-#from pantalla.py import mostrar_mensaje_bienvenida, mostrar_retroalimentacion, mostrar_mensaje_victoria, mostrar_mensaje_derrota
-#from manejo_entrada.py import obtener_intento_jugador
+from datos_palabras.py import seleccionar_palabra_secreta
+from validacion.py import verificar_victoria
+from evaluacion.py import evaluar_intento
+from pantalla.py import mostrar_mensaje_bienvenida, mostrar_retroalimentacion, mostrar_mensaje_victoria, mostrar_mensaje_derrota
+from manejo_entrada.py import obtener_intento_jugador
 import sys
 
 def jugar():
