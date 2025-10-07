@@ -3,8 +3,12 @@ import random
 
 def obtener_lista_palabras():
     """
-    Funcion que genera una lista de 20 palabras, asegura que esten en minuscula con .lower() y retorna la lista para utilizarla luego.
+    Genera y devuelve una lista de 20 palabras en minúsculas.
+
+    Retorna:
+        list[str]: Lista de palabras en minúsculas.
     """
+
     lista_de_palabras = [
     "barro", "juego", "zumba", "calor", "hielo", "lanza", "borde", "salsa", "pulso",
     "brisa", "tacho", "fluir", "nubes", "vigor", "joven", "raton",
@@ -15,8 +19,12 @@ def obtener_lista_palabras():
  
 def seleccionar_palabra_secreta():
     """
-    Funcion que selecciona una palabra de la lista de manera aleatoria.
+    Selecciona y devuelve una palabra al azar de la lista de palabras.
+
+    Retorna:
+        str: Palabra elegida aleatoriamente.
     """
+    
     palabra_secreta = obtener_lista_palabras()
     return random.choice(palabra_secreta)
 
