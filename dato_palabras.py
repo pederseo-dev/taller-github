@@ -8,3 +8,6 @@ def obtener_lista_palabras():
 ]
     return lista.lower()
 
+def seleccionar_palabra_secreta():
+    palabra= obtener_lista_palabras()
+    return random.choice(palabra)
