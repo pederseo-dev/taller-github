@@ -9,13 +9,15 @@ def validar_intento(intento,longitud_palabra):
     else:
         return (False, "Solo se permiten Letras") #Esto es por si no ingreso una letra
     
-def verificar_victoria(estados):
-    cantida_estados = len(estados)
-    contador = 0
+def verificar_victoria(estados): 
+    """
+    Recibi una lista de string, donde estan los estados de cada letra
+    """
+    contador = 0 #Inicializo mi contador
     for i in estados:
-        if i == "correcta":
-            contador += 1
-    if contador == cantida_estados:
+        if i == "correcta": #Si el itirador es igual a la palabra correcta
+            contador += 1   #Si es igual el contador suma 1
+    if contador == 5: #Si el contador es igual a la cantidad de estado (5) retorna true si no retorna false
         return True
     else:
         return False
