@@ -6,8 +6,12 @@ def obtener_lista_palabras():
     "brisa", "tacho", "tenaz", "nubes", "vigor", "joven", "raton",
     "marea", "llama", "tenaz", "crisp"
 ]
-    return lista.lower()
+    lista_minus=[palabra.lower() for palabra in lista]
+    return lista_minus
 
 def seleccionar_palabra_secreta():
     palabra= obtener_lista_palabras()
     return random.choice(palabra)
+
+pal=seleccionar_palabra_secreta()
+print(pal)
