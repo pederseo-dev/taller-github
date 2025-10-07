@@ -452,11 +452,11 @@ Cada archivo debe importar lo que necesita:
 ### Reglas de Git para el Taller
 
 1. Clona el repositorio
-2. Crea una rama con tu nombre: `git checkout -b nombre-archivo-X`
+2. Crea una rama con tu nombre: `git checkout -b feat/nombre-rama`
 3. Crea tu archivo asignado
 4. Haz commits frecuentes con mensajes descriptivos
 5. Cuando termines, haz push de tu rama
-6. El instructor integrará todas las ramas en `main`
+6. El instructor integrará todas las ramas en `staging`
 
 ### Testing Individual
 
